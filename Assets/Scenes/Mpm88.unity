@@ -2545,19 +2545,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 249369751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0becec5dca65b194b835fe18e91db896, type: 3}
+  m_Script: {fileID: 11500000, guid: 8050ba4331e6790429e9d1e30200375e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTextureUpdater: {fileID: 249369752}
-  Mpm3DModule: {fileID: -8196383504532815311, guid: d06a8e8a80cbe8b4ebd0a68097b8c370, type: 3}
-  renderType: 2
+  volumeTextureUpdater: {fileID: 0}
+  Mpm3DModule: {fileID: 0}
+  renderType: 0
   handMaterial: {fileID: 0}
-  pointMaterial: {fileID: 2100000, guid: 806cdc2a830a5a04cb265112e27795bf, type: 2}
-  raymarchingMaterial: {fileID: 2100000, guid: 213d25fa94bbba04da4a15e4de0b0a8e, type: 2}
-  plasticityType: 3
+  pointMaterial: {fileID: 0}
+  raymarchingMaterial: {fileID: 0}
+  plasticityType: 0
   stressType: 0
   RunSimulation: 1
-  splatManager: {fileID: 249369758}
+  splatManager: {fileID: 0}
   g: {x: 0, y: -9.8, z: 0}
   n_grid: 32
   bounding_eps: 0.1
@@ -2567,17 +2567,11 @@ MonoBehaviour:
   particle_per_grid: 8
   allowed_cfl: 0.5
   damping: 1
-  use_correct_cfl: 1
+  use_correct_cfl: 0
   obstacleType: 0
-  sphere:
-  - {fileID: 1300250346}
-  - {fileID: 1736624407}
-  oculus_hands:
-  - {fileID: 588067680}
-  - {fileID: 588067679}
-  oculus_skeletons:
-  - {fileID: 588067678}
-  - {fileID: 588067682}
+  sphere: []
+  oculus_hands: []
+  oculus_skeletons: []
   Skeleton_capsule_radius: 0.01
   E: 10000
   SigY: 1000
@@ -17989,7 +17983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &827997427
 MonoBehaviour:
   m_ObjectHideFlags: 0
