@@ -4,8 +4,6 @@ import numpy as np
 import taichi as ti
 import json
 
-import timeit
-
 from mpm_util import *
 
 parser = argparse.ArgumentParser()
@@ -437,7 +435,7 @@ def compile_mpm3D(arch, save_compute_graph, run=False):
             other_data[i][1] = scaleFactor*other_data[i][1]
             other_data[i][2] = scaleFactor*other_data[i][2]
             other_data[i][3] = scaleFactor*other_data[i][3]
-
+    # endregion
     
     # hand sdf
     hand_sdf = ti.ndarray(ti.f32, shape=(n_grid, n_grid, n_grid))
