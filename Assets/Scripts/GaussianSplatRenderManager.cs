@@ -22,7 +22,6 @@ public class GaussianSplatRenderManager : MonoBehaviour, IDisposable
     bool setted = false;
 
 
-
     // Member to store the number of splats
     public int splatsNum { get; private set; }
 

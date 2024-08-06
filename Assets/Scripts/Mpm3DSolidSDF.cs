@@ -579,7 +579,7 @@ public class Mpm3DSolidSDF : MonoBehaviour
             }
         }
     }
-
+    
     private void UpdateHandSkeletonSegment(int init, Vector3 start, Vector3 end, float frameTime, Vector3 meshPosition, Vector3 scale)
     {
         hand_skeleton_segments[init] = (start.x - meshPosition.x) / scale.x;

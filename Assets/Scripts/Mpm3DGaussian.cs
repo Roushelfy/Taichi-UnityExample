@@ -134,8 +134,6 @@ public class Mpm3DGaussian : MonoBehaviour
     private int handMotionIndex = 0;
     private InputAction spaceAction;
 
-    private OVRSkeletonRenderer ovrRend;
-
     [Header("Hand Recording")]
     [SerializeField]
     private bool UseRecordDate = false;
@@ -189,6 +187,11 @@ public class Mpm3DGaussian : MonoBehaviour
         {
             NParticles = (int)(n_grid * n_grid * n_grid * cube_size * cube_size * cube_size * particle_per_grid);
         }
+        if (NParticles == 0)
+        {
+            UnityEngine.Debug.LogError("No particles to simulate.");
+        }
+        
         dx = 1.0f / n_grid;
         p_vol = dx * dx * dx / particle_per_grid;
         p_mass = p_vol * p_rho;
@@ -247,7 +250,7 @@ public class Mpm3DGaussian : MonoBehaviour
         skeleton_segments = new NdArrayBuilder<float>().Shape(skeleton_num_capsules * oculus_skeletons.Length, 2).ElemShape(3).HostWrite(true).Build(); // 24 skeleton segments, each segment has 6 floats
         skeleton_velocities = new NdArrayBuilder<float>().Shape(skeleton_num_capsules * oculus_skeletons.Length, 2).ElemShape(3).HostWrite(true).Build(); // 24 skeleton velocities, each velocity has 6 floats
         hand_sdf = new NdArrayBuilder<float>().Shape(n_grid, n_grid, n_grid).Build();
-        skeleton_capsule_radius = new NdArrayBuilder<float>().Shape(skeleton_num_capsules * oculus_skeletons.Length).HostWrite(true).Build(); // use a consistent radius for all capsules (at now)
+        skeleton_capsule_radius = new NdArrayBuilder<float>().Shape(skeleton_num_capsules * oculus_skeletons.Length).HostWrite(true).Build();
         obstacle_normals = new NdArrayBuilder<float>().Shape(n_grid, n_grid, n_grid).ElemShape(3).Build();
 
         //gaussian

@@ -967,8 +967,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Parameters
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0e82ad017707fc3409f9cc1e2cccd37b, type: 2}
-  m_sharedMaterial: {fileID: -9221056233183343877, guid: 0e82ad017707fc3409f9cc1e2cccd37b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4341,8 +4341,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Create a New Object
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
-  m_sharedMaterial: {fileID: -5839354330806206608, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6121,6 +6121,10 @@ PrefabInstance:
     - target: {fileID: 4543456757522008391, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628733740971023418, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6112363069116108099, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_Enabled
@@ -8089,7 +8093,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d5eb587d2e742e438af8cba80fc30fe, type: 2}
+  - {fileID: 2100000, guid: b23d8d86f1ce4144b882687b544f3943, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8488,7 +8492,7 @@ MonoBehaviour:
   oculus_skeletons:
   - {fileID: 588067678}
   - {fileID: 588067682}
-  preset_capsule_radius: []
+  Skeleton_capsule_radius: 0.01
   E: 150000
   SigY: 10000
   nu: 0.1
@@ -9653,8 +9657,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Plasticity Type (Default Von Mises)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
-  m_sharedMaterial: {fileID: -5839354330806206608, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13355,8 +13359,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Materials
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0e82ad017707fc3409f9cc1e2cccd37b, type: 2}
-  m_sharedMaterial: {fileID: -9221056233183343877, guid: 0e82ad017707fc3409f9cc1e2cccd37b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14180,7 +14184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1300250342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24460,8 +24464,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reset Simulation
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
-  m_sharedMaterial: {fileID: -5839354330806206608, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26192,8 +26196,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Stress Type (Default Neo-Hookean)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
-  m_sharedMaterial: {fileID: -5839354330806206608, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26873,7 +26877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1736624407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28068,8 +28072,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fix the Object in Place
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
-  m_sharedMaterial: {fileID: -5839354330806206608, guid: a80c2c356be3a644eb72c14eb812f0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
